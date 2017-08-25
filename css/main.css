@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:700");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+body, button, p {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  color: white; }
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 24px; }
+
+a {
+  font-family: 'Arimo', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer; }
+
+a:hover {
+  color: #dd5733; }
+
+* {
+  box-sizing: border-box; }
+
+.album-info {
+  width: 800px;
+  margin: 0 auto; }
+
+.album-info img {
+  float: left;
+  width: 400px;
+  height: 400px; }
+
+.album-info a {
+  display: block;
+  width: 113px;
+  margin: 48px auto; }
+
+.album-text {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 12px;
+  height: 400px; }
+
+.album-text div {
+  margin-bottom: -14px; }
+
+.one {
+  background: #ffd68b;
+  display: flex;
+  align-items: center; }
+
+.two {
+  background: yellow; }
+
+/*# sourceMappingURL=main.css.map */
