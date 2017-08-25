@@ -50,8 +50,11 @@ a:hover {
   width: 800px;
   margin: 0 auto; }
 
-.album-info img {
+.album-img {
   float: left;
+  height: 400px; }
+
+.album-img img {
   width: 400px;
   height: 400px; }
 
@@ -73,5 +76,31 @@ a:hover {
 .go i {
   font-size: 48px;
   margin-top: 48px; }
+
+@media screen and (max-width: 960px) {
+  .album-info {
+    width: 400px; }
+
+  .album-img {
+    width: 100%; }
+
+  .album-text {
+    align-items: flex-start;
+    height: auto;
+    width: 400px;
+    padding-left: 0; } }
+@media screen and (max-width: 600px) {
+  .album-info {
+    width: 100%; }
+
+  .album-img {
+    height: auto; }
+
+  .album-img img {
+    width: 100%;
+    height: auto; }
+
+  .album-text {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
