@@ -92,6 +92,10 @@ a:hover {
     width: 400px;
     padding-left: 0; } }
 @media screen and (max-width: 600px) {
+  .album-container {
+    display: flex;
+    align-items: flex-start; }
+
   .album-info {
     width: 100%; }
 
@@ -105,5 +109,11 @@ a:hover {
   .album-text {
     width: 100%;
     padding: 0 12px 0 12px; } }
+@media screen and (max-height: 960px) {
+  .album-text p {
+    display: none; }
+
+  .album-text {
+    justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */

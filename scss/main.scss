@@ -84,6 +84,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .album-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .album-info {
     width: 100%;
   }
@@ -100,6 +105,16 @@
   .album-text {
     width: 100%;
     padding: 0 12px 0 12px;
+  }
+}
+// HEIGHT FIX
+@media screen and (max-height: 960px){
+  .album-text p {
+    display: none;
+  }
+
+  .album-text {
+    justify-content: center;
   }
 }
 
