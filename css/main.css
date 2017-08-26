@@ -108,12 +108,14 @@ a:hover {
 
   .album-text {
     width: 100%;
-    padding: 0 12px 0 12px; } }
-@media screen and (max-height: 960px) {
+    padding: 0 12px 0 12px;
+    justify-content: center;
+    margin-bottom: 24px; }
+
   .album-text p {
     display: none; }
 
-  .album-text {
-    justify-content: center; } }
+  .go i {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

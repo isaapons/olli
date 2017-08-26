@@ -1,12 +1,14 @@
 @import
 "typography.scss"
 ;
+
 // IMPORTANT THINGS
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 .center-v {
   display: flex;
   align-items: center;
@@ -65,8 +67,8 @@
   margin-top: 48px;
 }
 
+// RESPONSIVE
 @media screen and (max-width: 960px) {
-
   .album-info {
     width: 400px;
   }
@@ -82,6 +84,7 @@
     padding-left: 0;
   }
 }
+
 
 @media screen and (max-width: 600px) {
   .album-container {
@@ -105,17 +108,24 @@
   .album-text {
     width: 100%;
     padding: 0 12px 0 12px;
+    justify-content: center;
+    margin-bottom: 24px;
   }
-}
-// HEIGHT FIX
-@media screen and (max-height: 960px){
+
   .album-text p {
     display: none;
   }
 
-  .album-text {
-    justify-content: center;
+  .go i {
+    display: none;
   }
+}
+
+// HEIGHT FIX
+@media screen and (max-height: 600px){
+
+
+
 }
 
 
