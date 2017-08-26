@@ -1,8 +1,17 @@
+window.onload = function() {
 
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-    sectionsColor: ['#ffd68b','#7FCEFF'],
-    verticalCentered: false,
-    anchors:['one', 'two', 'thirdPage'],
+  // FULLPAGEJS
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      sectionsColor: ['#ffd68b','#ffd68b'],
+      verticalCentered: false,
+      anchors:['one', 'two'],
+      navigation: true,
+      responsiveWidth: 960,
+      scrollBar: false,
+
+    });
   });
-});
+};
+
+//#7FCEFF
