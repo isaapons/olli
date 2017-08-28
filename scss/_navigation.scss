@@ -1,11 +1,9 @@
 header {
   height: 74px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top:0;
   left: 0;
-  background: #ffd68b;
-
 }
 .actual-header {
   display: flex;
@@ -26,7 +24,6 @@ header {
 
 nav a {
   margin-left: 12px;
-
 }
 
 .burger {
@@ -41,6 +38,7 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
+
   nav {
     display: none;
   }

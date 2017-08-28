@@ -30,10 +30,9 @@ a:hover {
 header {
   height: 74px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
-  background: #ffd68b; }
+  left: 0; }
 
 .actual-header {
   display: flex;
@@ -81,9 +80,6 @@ body {
 
 .clear {
   clear: both; }
-
-main {
-  margin-top: 74px; }
 
 .one {
   height: 100vh;
