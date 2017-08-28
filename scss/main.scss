@@ -1,5 +1,6 @@
 @import
-"typography.scss"
+"typography.scss",
+"navigation.scss"
 ;
 
 // IMPORTANT THINGS
@@ -8,7 +9,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background: #ffd68b;
+}
 .center-v {
   display: flex;
   align-items: center;
@@ -25,7 +28,17 @@
   clear: both;
 }
 
+main {
+  margin-top: 74px;
+  overflow: hidden;
+}
+
 // SECTION ONE
+.one {
+  height: 100vh;
+  min-height: 700px;
+}
+
 .album-container {
   height: 100%;
 }
@@ -38,10 +51,12 @@
 .album-img {
   float:left;
   height: 400px;
+  z-index: 1000;
 }
 .album-img img {
   width: 400px;
   height: 400px;
+
 }
 
 .album-text {
@@ -52,19 +67,17 @@
   margin-bottom: 48px;
 }
 
-.album-text div {
-  margin-bottom: -14px;
-}
 
 .go {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 175px;
 }
 
 .go i {
   font-size: 48px;
-  margin-top: 48px;
 }
 
 // RESPONSIVE
@@ -87,6 +100,9 @@
 
 
 @media screen and (max-width: 600px) {
+  .one {
+    height:auto;
+  }
   .album-container {
     display: flex;
     align-items: flex-start;
@@ -109,24 +125,14 @@
     width: 100%;
     padding: 0 12px 0 12px;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
   }
-
-  .album-text p {
-    display: none;
-  }
-
-  .go i {
-    display: none;
+  .go {
+    height: 100px;
+    margin-bottom: 48px;
   }
 }
 
-// HEIGHT FIX
-@media screen and (max-height: 600px){
-
-
-
-}
 
 
 //SECTION TWO
