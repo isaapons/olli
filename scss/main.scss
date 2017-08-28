@@ -29,7 +29,7 @@ body {
 }
 
 main {
-//  margin-top: -74px;
+  margin-top: 74px;
 }
 
 // SECTION ONE
@@ -55,7 +55,7 @@ main {
 .album-img img {
   width: 400px;
   height: 400px;
-z-index: 10000;
+  z-index: 5;
 }
 
 .album-text {
@@ -99,6 +99,12 @@ z-index: 10000;
 
 
 @media screen and (max-width: 600px) {
+  main {
+    margin-top: 0;
+     transition-property: margin-top;
+     transition-duration: 0.5s;
+  }
+
   .one {
     height:auto;
   }

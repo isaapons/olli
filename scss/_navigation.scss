@@ -4,7 +4,9 @@ header {
   position: absolute;
   top:0;
   left: 0;
+  background: #ffd68b;
 }
+
 .actual-header {
   display: flex;
   align-items: baseline;
@@ -12,26 +14,41 @@ header {
   max-width: 1140px;
   width: 100%;
   margin: 24px 0;
-
 }
-
-
 
 .actual-header > a {
   font-size: 24px;
-
 }
 
 nav a {
   margin-left: 12px;
 }
 
-.burger {
+.burger-div {
   display: none;
+}
+
+// SECRET NAV
+
+.secret-nav {
+  width: 100%;
+  position: absolute;
+  top: -164px;
+  left: 0;
+  background: #ffd68b;
+  //height: 140px;
+  margin: 12px 0;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.secret-nav a {
+  margin-bottom: 12px;
 }
 
 //REPSONSIVE
 @media screen and (max-width: 1140px) {
+
   .actual-header {
     margin: 24px 12px;
   }
@@ -39,10 +56,31 @@ nav a {
 
 @media screen and (max-width: 600px) {
 
-  nav {
+  header {
+    background: none;
+    transition: 0.5s;
+  }
+
+  header nav {
     display: none;
   }
-  .burger {
+
+  .burger-div {
     display: block;
+  }
+
+  .secret-nav-visible {
+    top: 0;
+  }
+
+  .secret-nav nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-move {
+    margin-top: 164px;
   }
 }
