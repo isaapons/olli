@@ -33,7 +33,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2; }
+  background: #ffd68b; }
 
 .actual-header {
   display: flex;
@@ -44,12 +44,10 @@ header {
   margin: 24px 0; }
 
 .actual-header > a {
-  font-size: 24px;
-  z-index: 4; }
+  font-size: 24px; }
 
 nav a {
-  margin-left: 12px;
-  z-index: 4; }
+  margin-left: 12px; }
 
 .burger {
   display: none; }
@@ -85,8 +83,7 @@ body {
   clear: both; }
 
 main {
-  margin-top: 74px;
-  overflow: hidden; }
+  margin-top: 74px; }
 
 .one {
   height: 100vh;
@@ -101,12 +98,12 @@ main {
 
 .album-img {
   float: left;
-  height: 400px;
-  z-index: 1000; }
+  height: 400px; }
 
 .album-img img {
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  z-index: 10000; }
 
 .album-text {
   display: flex;

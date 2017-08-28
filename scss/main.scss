@@ -30,7 +30,6 @@ body {
 
 main {
   margin-top: 74px;
-  overflow: hidden;
 }
 
 // SECTION ONE
@@ -51,12 +50,12 @@ main {
 .album-img {
   float:left;
   height: 400px;
-  z-index: 1000;
+
 }
 .album-img img {
   width: 400px;
   height: 400px;
-
+z-index: 10000;
 }
 
 .album-text {
