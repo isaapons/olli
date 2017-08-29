@@ -16,6 +16,9 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-size: 24px; }
 
+h1 {
+  font-size: 36px; }
+
 a {
   font-family: 'Arimo', sans-serif;
   font-size: 18px;
@@ -57,10 +60,9 @@ nav a {
   position: absolute;
   top: -164px;
   left: 0;
-  margin: 12px 0;
+  margin: 24px 0 12px 0;
   z-index: 10;
-  transition: 0.5s;
-  transition-delay: 0.10s; }
+  transition: 0.5s; }
 
 .secret-nav a {
   margin-bottom: 12px; }
@@ -90,6 +92,15 @@ nav a {
 
   .header-move {
     margin-top: 164px; } }
+.two {
+  background: linear-gradient(to bottom, #ffd68b, #FF997C, #FF997C);
+  height: 100vh;
+  min-height: 700px; }
+
+.music {
+  width: 800px;
+  margin-top: 24px; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -139,7 +150,9 @@ main {
   align-items: flex-end;
   padding-left: 12px;
   height: 400px;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  text-align: justify;
+  text-justify: inter-word; }
 
 .go {
   display: flex;
@@ -186,9 +199,11 @@ main {
     width: 100%;
     height: auto; }
 
+  .r-padding {
+    padding: 0 12px 0 12px; }
+
   .album-text {
     width: 100%;
-    padding: 0 12px 0 12px;
     justify-content: center;
     margin-bottom: 36px; }
 

@@ -1,6 +1,7 @@
 @import
 "typography.scss",
-"navigation.scss"
+"navigation.scss",
+"two.scss"
 ;
 
 // IMPORTANT THINGS
@@ -36,6 +37,8 @@ main {
 .one {
   height: 100vh;
   min-height: 700px;
+
+
 }
 
 .album-container {
@@ -64,9 +67,9 @@ main {
   padding-left:12px;
   height: 400px;
   margin-bottom: 48px;
+  text-align: justify;
+  text-justify: inter-word;
 }
-
-
 .go {
   display: flex;
   flex-direction: column;
@@ -101,8 +104,8 @@ main {
 @media screen and (max-width: 600px) {
   main {
     margin-top: 0;
-     transition-property: margin-top;
-     transition-duration: 0.5s;
+    transition-property: margin-top;
+    transition-duration: 0.5s;
   }
 
   .one {
@@ -125,10 +128,11 @@ main {
     width: 100%;
     height: auto;
   }
-
+  .r-padding {
+    padding: 0 12px 0 12px;
+  }
   .album-text {
     width: 100%;
-    padding: 0 12px 0 12px;
     justify-content: center;
     margin-bottom: 36px;
   }
