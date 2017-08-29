@@ -1,10 +1,41 @@
 // SECTION TWO
 .two {
-  background: linear-gradient(to bottom,#ffd68b,#FF997C,#FF997C);
+  background: #FF997C;
   height: 100vh;
   min-height: 700px;
 }
+
 .music {
   width: 800px;
-  margin-top: 24px;
+}
+
+.music-wrapper {
+  display: block;
+
+}
+
+.music-gallery {
+  width: 800px;
+  height: 400px;
+  background: white;
+}
+
+.music-gallery a:hover {
+  opacity: 0.5;
+}
+
+.sc-player {
+  height: 200px;
+  overflow: hidden;
+}
+.sc {
+  margin-top: -4px;
+}
+@media screen and (max-width: 960px) {
+  .music {
+    width: 100%;
+  }
+  .music-gallery {
+    width: 100%;
+  }
 }

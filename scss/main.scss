@@ -23,6 +23,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .clear {
@@ -37,7 +38,7 @@ main {
 .one {
   height: 100vh;
   min-height: 700px;
-
+  background: linear-gradient(to bottom,#ffd68b,#ffd68b,#ffd68b,#ffd68b,#ffd68b,#FF997C);
 
 }
 
@@ -67,8 +68,6 @@ main {
   padding-left:12px;
   height: 400px;
   margin-bottom: 48px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 .go {
   display: flex;
@@ -102,15 +101,19 @@ main {
 
 
 @media screen and (max-width: 600px) {
+
   main {
     margin-top: 0;
     transition-property: margin-top;
     transition-duration: 0.5s;
   }
 
-  .one {
+  .a-height {
     height:auto;
   }
+
+
+
   .album-container {
     display: flex;
     align-items: flex-start;
@@ -128,20 +131,26 @@ main {
     width: 100%;
     height: auto;
   }
+
   .r-padding {
     padding: 0 12px 0 12px;
   }
+
   .album-text {
     width: 100%;
     justify-content: center;
     margin-bottom: 36px;
   }
+
   .go {
     height: 100px;
     margin-bottom: 48px;
   }
 }
-
-
+@media screen and (max-height: 750px) {
+  .go i {
+    display: none;
+  }
+}
 
 //SECTION TWO

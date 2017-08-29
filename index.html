@@ -8,7 +8,7 @@
   <!-- STYLE -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <script src="https://use.fontawesome.com/341271d43b.js"></script>
-  <link rel="stylesheet" href="js/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/jgallery.css" />
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -51,7 +51,7 @@
   <main>
 
 
-    <div id="one" class="section one">
+    <div id="one" class="one a-height">
 
       <div class="album-container center-v clear">
         <div class="album-info">
@@ -60,7 +60,7 @@
           </div>
           <div class="album-text r-padding">
             <div>
-              <h1>OLLI - ALBUM TITLE</h1>
+              <h1>ALBUM TITLE</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -81,26 +81,39 @@
 
 
 
-      <div id="two" class="section two">
-        <div class=" center-h ">
-          <div class="music r-padding">
-            <h1>MUSIC</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">SEX</a>
+      <div id="two" class="two center-v a-height">
+        <div class="center-h">
+          <div class="music">
+            <h1 class="r-padding">MUSIC</h1>
+
+
+
+              <div class="music-gallery">
+                <a id="song1" href="#"><img src="assets/img/music1.png" alt=""></a>
+                <a id="song2" href="#"><img src="assets/img/music2.png" alt=""></a>
+                <a id="song3" href="#"><img src="assets/img/music3.png" alt=""></a>
+                <a id="song4" href="#"><img src="assets/img/music4.png" alt=""></a>
+                <a id="song5" href="#"><img src="assets/img/music5.png" alt=""></a>
+                <a id="song6" href="#"><img src="assets/img/music7.png" alt=""></a>
+                <a id="song7" href="#"><img src="assets/img/music6.png" alt=""></a>
+                <a id="song8" href="#"><img src="assets/img/music8.png" alt=""></a>
+              </div>
+
+              <div class="sc-player">
+                <iframe class="sc" width="100%" height="204" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304123823&amp;color=dd5733&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              </div>
+
           </div>
+
         </div>
       </div>
 
     </main>
 
-
-
-
   </body>
-  <!-- scripts -->
+  <!-- SCRIPTS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/jquery.fullPage.js"></script>
-  <script src="js/main.js">
+  <script src="js/jgallery.js"></script>
+  <script src="js/main.js"></script>
 
-  </script>
   </html>
