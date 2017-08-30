@@ -177,7 +177,10 @@ nav a {
 
   .music-gallery {
     width: 100%;
-    height: 400px; } }
+    height: 400px; }
+
+  .r-padding2 {
+    padding: 0 12px 0 12px; } }
 @media screen and (max-width: 615px) {
   .music-wrapper {
     height: 600px; } }
@@ -259,10 +262,10 @@ main {
     height: auto;
     width: 400px;
     padding-left: 0; } }
-@media screen and (max-width: 800px) {
-  .r-padding {
-    padding: 0 12px 0 12px; } }
 @media screen and (max-width: 600px) {
+  .r-padding {
+    padding: 0 12px 0 12px; }
+
   main {
     margin-top: 0;
     transition-property: margin-top;
