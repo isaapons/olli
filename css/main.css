@@ -95,6 +95,21 @@ nav a {
 
   .header-move {
     margin-top: 164px; } }
+.fa {
+  font-size: 48px; }
+
+#spotify:hover {
+  color: #91FFB7; }
+
+#soundcloud:hover {
+  color: #FF3B00; }
+
+#bandcamp:hover {
+  color: #B2EEFF; }
+
+@media screen and (max-width: 600px) {
+  .fa {
+    font-size: 36px; } }
 .two {
   background: #FF997C;
   height: 100vh;
@@ -109,7 +124,6 @@ nav a {
 
 .music-gallery {
   width: 800px;
-  height: 400px;
   background: white; }
 
 .music-gallery a:hover {
@@ -149,21 +163,6 @@ nav a {
 @media screen and (max-width: 415px) {
   .music-wrapper {
     height: 800px; } }
-.fa {
-  font-size: 48px; }
-
-#spotify:hover {
-  color: #91FFB7; }
-
-#soundcloud:hover {
-  color: #FF3B00; }
-
-#bandcamp:hover {
-  color: #B2EEFF; }
-
-@media screen and (max-width: 600px) {
-  .fa {
-    font-size: 36px; } }
 * {
   box-sizing: border-box;
   margin: 0;

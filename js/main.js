@@ -59,7 +59,7 @@ window.onload = function() {
   // JUSTIFIED GALLERY
   $('.music-gallery').justifiedGallery({
     rowHeight : 200,
-    lastRow : 'hide',
+    lastRow : 'justify',
     margins : 0,
     cssAnimation : true,
     waitThumbnailsLoad : false,
