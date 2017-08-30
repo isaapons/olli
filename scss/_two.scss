@@ -10,8 +10,8 @@
 }
 
 .music-wrapper {
-  display: block;
-
+  height:400px;
+  overflow: hidden;
 }
 
 .music-gallery {
@@ -37,5 +37,19 @@
   }
   .music-gallery {
     width: 100%;
+    height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 615px) {
+  .music-wrapper {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .music-wrapper {
+    height: 800px;
   }
 }

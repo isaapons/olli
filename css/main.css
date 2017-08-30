@@ -101,7 +101,8 @@ nav a {
   width: 800px; }
 
 .music-wrapper {
-  display: block; }
+  height: 400px;
+  overflow: hidden; }
 
 .music-gallery {
   width: 800px;
@@ -123,7 +124,14 @@ nav a {
     width: 100%; }
 
   .music-gallery {
-    width: 100%; } }
+    width: 100%;
+    height: 400px; } }
+@media screen and (max-width: 615px) {
+  .music-wrapper {
+    height: 600px; } }
+@media screen and (max-width: 415px) {
+  .music-wrapper {
+    height: 800px; } }
 * {
   box-sizing: border-box;
   margin: 0;
@@ -184,7 +192,7 @@ main {
   justify-content: space-between;
   height: 175px; }
 
-.go i {
+.fa {
   font-size: 48px; }
 
 @media screen and (max-width: 960px) {
