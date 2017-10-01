@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:700");
-@import url("https://fonts.googleapis.com/css?family=Muli");
-body, button, p {
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700");
+body, button, p, td {
   font-family: 'Muli', sans-serif;
   font-size: 14px;
   color: white; }
@@ -98,6 +98,9 @@ nav a {
 .fa {
   font-size: 48px; }
 
+.music-socials .fa {
+  font-size: 36px; }
+
 #spotify:hover {
   color: #91FFB7; }
 
@@ -147,7 +150,6 @@ nav a {
 .thumb a {
   position: absolute;
   top: 0;
-  display: block;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -161,15 +163,24 @@ nav a {
   color: white;
   margin-top: 76px;
   z-index: 1000;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
+  transition: opacity .5s ease-in-out; }
+
+.overlay {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 100;
+  transition: opacity .5s ease-in-out; }
 
 .thumb a:hover .play {
   opacity: 1; }
 
-.thumb a:hover img {
-  opacity: 0.8; }
+.thumb a:hover .overlay {
+  opacity: 0.2; }
 
 @media screen and (max-width: 960px) {
   .music {
@@ -190,6 +201,73 @@ nav a {
 @media screen and (max-width: 415px) {
   .music-wrapper {
     height: 800px; } }
+.three {
+  background: linear-gradient(to bottom, #FF997C, #ffd68b, #ffd68b, #ffd68b, #ffd68b, #ffd68b);
+  height: auto;
+  min-height: 100vh; }
+
+.shows {
+  width: 800px;
+  margin-top: 150px; }
+
+.shows h1 {
+  margin-right: 12px;
+  margin-top: 0; }
+
+.shows img {
+  width: 100%;
+  margin-bottom: 24px; }
+
+.shows-table {
+  width: 100%;
+  border-collapse: collapse; }
+
+.shows-table tr {
+  height: 75px;
+  border-bottom: 2px solid white; }
+
+.t-tickets {
+  float: right;
+  border: solid white 2px;
+  padding: 6px 24px;
+  border-radius: 2px; }
+
+.t-date {
+  font-weight: bold;
+  font-size: 18px; }
+
+@media screen and (max-width: 960px) {
+  .shows {
+    width: 100%; }
+
+  .shows img {
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  tbody, tr, td {
+    display: block; }
+
+  .shows-table tr {
+    padding: 12px 0;
+    height: auto; }
+
+  .shows-table td {
+    border: none;
+    position: relative;
+    margin: 6px 0; }
+
+  .t-date {
+    margin: 0 0 12px 0; }
+
+  .t-venue {
+    margin: -6px 0; }
+
+  .t-tickets {
+    width: 100%;
+    float: none;
+    display: block; }
+
+  td:last-child {
+    margin-top: 24px; } }
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,0 +1,93 @@
+// SECTION THREE
+.three {
+  background: linear-gradient(to bottom,#FF997C,#ffd68b,#ffd68b,#ffd68b,#ffd68b,#ffd68b);
+  height: auto;
+  min-height: 100vh;
+}
+
+.shows {
+  width: 800px;
+  margin-top: 150px;
+}
+.shows h1 {
+  margin-right: 12px;
+  margin-top: 0;
+
+}
+.shows img {
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+//TABLE
+.shows-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shows-table tr {
+  height: 75px;
+  border-bottom: 2px solid white;
+}
+
+.t-tickets {
+  float: right;
+  border: solid white 2px;
+  padding: 6px 24px;
+  border-radius: 2px;
+}
+
+
+.t-date {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 960px){
+  .shows {
+    width: 100%;
+  }
+  .shows img {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 500px){
+  tbody, tr, td {
+    display: block
+  }
+
+  .shows-table tr {
+    padding: 12px 0;
+    height: auto;
+
+  }
+
+  .shows-table td {
+    border: none;
+    position: relative;
+    margin: 6px 0;
+  }
+
+  .t-date {
+    margin: 0 0 12px 0;
+  }
+
+  .t-venue {
+    margin: -6px 0;
+  }
+
+  .t-tickets {
+    width: 100%;
+    float: none;
+    display:block;
+  }
+
+  td:last-child {
+    margin-top: 24px;
+  }
+
+}
